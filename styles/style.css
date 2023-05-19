@@ -5,16 +5,142 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', 'Raleway';
     background-color: #1A1617;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(
+      270deg, #40caa7c4, #40caa72a ), url('../src/home1.jpg');
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-clip: unset;
+  }
+  #logo {
+    position: relative;
+    font-family: 'Poppins';
+    font-style:normal;
+    font-size: 2.5em;
+    color: black;
+    transition: .4s;
+  }
+  .logo-ativo {
+    color: #7D0B23 !important;
+
   }
   #navbar {
     position: fixed;
-    top: 0;
-    flex-direction: row;
+    top: 20px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 95%;
     box-sizing: border-box;
     padding: 0%;
     z-index: 2;
-    transition: 4s;
+    transition: .4s;
+   padding: 0 0 0 5%;
+  }
+  .navbar-ativo {
+    background: #40caa76b;
+    box-shadow: #1A1617;
+    backdrop-filter: blur(4px);
+  }
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    font-weight: 500;
+  }
+  #navbar ul li a {
+    text-decoration: none;
+    position: relative;
+  }
+
+  .nav-link {
+    color: white;
+    transition: .5s;
+  }
+  .nav-link-ativo {
+    color: #7D0B23;
+  }
+  .link-animation-ativo::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #7D0B23;
+    border-radius: 5px;
+    transition: .4s ease-in-out;
+  }
+  .link-animation-ativo:hover:after {
+    width: 100%;
+  }
+  .link-animation::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #7D0B23;
+    border-radius: 5px;
+    transition: .4s ease-in-out;
+  }
+  .link-animation:hover:after {
+    width: 100%;
+  }
+  #header-content {
+    position: relative;
+    width: 100%;
+    padding: 2% 4%;
+    box-sizing: border-box;
+  }
+  .loona-logo {
+    height: 20vh;
+    width: 90vw;
+    position: inherit;
+  }
+  .loona-logo img {
+    width: 20%;
+    display: flex;
+    bottom: 0%;
+    position: relative;
+    z-index: -3;
+    filter: brightness(1.1);
+  }
+  .header-content {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    margin: 8% 0 0 0;
+  }
+
+  .titulo-header {
+    width: auto;
+    position: relative;
+  }
+
+  .titulo-header h1 {
+    font-size: 8em;
+    margin: 0%;
+    color: white;
+    font-size: 120px;
+  }
+
+  .header-content .texto-header {
+    color: #40CAA8;
+    width: 700vw;
+    height: 100vh;
+    font-weight: 500;
+    font-size: 28px;
+    padding: 0 0 0 5%;
+  }
+  .header-content .texto-header span {
+    color: #FF8A6E;
+  }
+  .header-content .texto-header img {
+    width: 30%;
+    padding: 0 0 0 10%;
   }
