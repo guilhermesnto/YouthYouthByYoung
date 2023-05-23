@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,39 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Acesso</title>
 </head>
+
 <body>
-    <section id="acesso"></section>
-    
+    <header class="header-acesso">
+        <nav id="navbar">
+            <span id="logo">yyxy</span>
+            <ul>
+                <li>
+                    <a href="index.html" class="nav-link link-animation">Página Inicial</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-acesso">
+            <div class="container-login">
+                <p>
+                    Iniciar Sessão
+                </p>
+                <label for="input_user">
+                    <input type="text" id="input_user" placeholder="Usuário ou Email">
+                </label>
+                <label for="input_senha">
+                    <input type="text" id="input_senha" placeholder="Senha">
+                </label>
+                <button class="button" onclick="entrar()">Entrar</button>
+                <div id="div_aguardar" class="loading-div"></div>
+            </div>
+
+        </div>
+        <div class="container-footer">
+            <img src="img/gramaLogin.jpg" class="header-background" alt="">
+            <img src="img/gramaCadastro.jpg" class="header-background" alt="">
+        </div>
+    </header>
+
 </body>
+
 </html>
