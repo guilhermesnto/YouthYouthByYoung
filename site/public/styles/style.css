@@ -206,3 +206,40 @@
 header {
   height: 20%;
 }
+
+#sobre {
+  display: flex;
+  margin-top: 10%;
+  justify-content:start;
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: white;
+  margin-left: 10%;
+  font-size: 1.2rem;
+}
+#sobre .sobre-titulo {
+  color: #40CAA8;
+  font-size: 3rem;
+}
+#sobre  .numero1 {
+color: #7D0B23;
+}
+.sobre-corpo {
+  width: 30vw;
+} .sobre-titulo2 p{
+  color: #40CAA8;
+  font-size: 3rem;
+  margin-right: 10rem;
+}
+.container-login  ul {
+  list-style: none;
+}
+.container-login ul li a{
+  text-decoration: none;
+
+}
+.container-login {
+  color: white;
+    font-family: 'Poppins';
+    font-size:large;
+    font-style: bold;}
